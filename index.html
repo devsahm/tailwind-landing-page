@@ -12,24 +12,41 @@
     <nav class="relative container mx-auto p-6">
        <!-- Flex Container -->
        <div class="flex justify-between items-center">
-        <!-- Logo -->
-        <div class="pt-2">
-            <img src="img/logo.svg" alt="">
-        </div>
+            <!-- Logo -->
+            <div class="pt-2">
+                <img src="img/logo.svg" alt="">
+            </div>
 
-        <!-- Menu -->
-        <div class="hidden space-x-6 md:flex">
-            <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
-            <a href="#" class="hover:text-darkGrayishBlue">Product</a>
-            <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
-            <a href="#" class="hover:text-darkGrayishBlue">Career</a>
-            <a href="#" class="hover:text-darkGrayishBlue">Commuity</a>
-        </div>
+            <!-- Menu -->
+            <div class="hidden space-x-6 md:flex">
+                <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+                <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+                <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+                <a href="#" class="hover:text-darkGrayishBlue">Career</a>
+                <a href="#" class="hover:text-darkGrayishBlue">Commuity</a>
+            </div>
 
-        <a href="#" class="hidden p-2 px-6 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block">
-            Get Started
-        </a> 
+            <a href="#" class="hidden p-2 px-6 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block">
+                Get Started
+            </a> 
 
+            <!-- Hamburger Icon -->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-buttom"></span>
+            </button>
+
+       </div>
+       <!-- Mobile Menu -->
+       <div class="md:hidden">
+            <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="">Pricing</a>
+                <a href="">Product</a>
+                <a href="">About Us</a>
+                <a href="">Career</a>
+                <a href="">Community</a>
+            </div>
        </div>
     </nav>
 
@@ -63,43 +80,230 @@
     </section>
 
     <!-- Feaeture-Item -->
-
     <section id="feature">
+        <!-- Flex section -->
+        <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
 
-        <!-- Flex Container -->
-        <div class="container flex flex-col px-4 mx-auto space-y-12 md:flex-row md:space-y-0">
-
-            <!-- Whats the Difference -->
-            <div class="flex flex-col items-center space-y-12 md:items-start md:w-1/2">
-                <h1 class="max-w-md text-center font-bold text-4xl md:text-left">
-                    What's Different about Manage?
-                </h1>
-
-                <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum nobis nulla odit alias nemo fuga reprehenderit sunt at aut repellat. Voluptas, provident. Eveniet blanditiis quis molestiae neque maiores dolore pariatur!
+            <!-- Whats Different -->
+            <div class="flex flex-col space-y-12 md:w-1/2">
+                <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
+                    What's Different About Manage
+                </h2>
+                <p class="max-w-md text-darkGrayishBlue text-center md:text-left">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab fugiat sed a enim quis minima voluptatem mollitia incidunt commodi quos.
                 </p>
+
             </div>
 
-            <!-- Numbered  List -->
+            <!-- Numbered List -->
             <div class="flex flex-col space-y-8 md:w-1/2">
-                <!-- List -->
+
+                <!-- List Item 1 -->
                 <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
-                    
-                    <!-- Heading 1 -->
-                    <div class="rounded-l-full bg-brightRedSubLight md:bg-transparent">
+
+                    <!-- Heading -->
+                    <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
                         <div class="flex items-center space-x-2">
-                            <div class="px-20 py-2  text-white rounded-full md:py-1 bg-brightRed">
+                            <div class="px-4 py-2 text-white rounded-full bg-brightRed md:py-1">
                                 01
                             </div>
-                            <h3 class="text-base font-bold md:mb-4">
+                            <h3 class="text-base font-bold md:mb-4 md:hidden">
                                 Track Company Wide Progress
                             </h3>
                         </div>
                     </div>
-
+                    <div>
+                        <h3 class="hidden mb-4 font-bold text-lg md:block">
+                             Track Company Wide Progress
+                        </h3>
+                        <p class="text-darkGrayishBlue">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate pariatur sit aliquam dolorum voluptates saepe molestiae a hic. Eaque dolor atque repellendus autem aspernatur laudantium in aliquid modi voluptate ipsam.
+                        </p>
+                    </div>
                 </div>
+
+                <!-- List Item 2 -->
+                <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+
+                    <!-- Heading -->
+                    <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+                        <div class="flex items-center space-x-2">
+                            <div class="px-4 py-2 text-white rounded-full bg-brightRed md:py-1">
+                                02
+                            </div>
+                            <h3 class="text-base font-bold md:mb-4 md:hidden">
+                                Advance Building Report
+                            </h3>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="hidden mb-4 font-bold text-lg md:block">
+                            Advance Building Report
+                        </h3>
+                        <p class="text-darkGrayishBlue">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate pariatur sit aliquam dolorum voluptates saepe molestiae a hic. Eaque dolor atque repellendus autem aspernatur laudantium in aliquid modi voluptate ipsam.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- List Item 3 -->
+                <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+
+                    <!-- Heading -->
+                    <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+                        <div class="flex items-center space-x-2">
+                            <div class="px-4 py-2 text-white rounded-full bg-brightRed md:py-1">
+                                03
+                            </div>
+                            <h3 class="text-base font-bold md:mb-4 md:hidden">
+                                Everything yu Need in One Place
+                            </h3>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="hidden mb-4 font-bold text-lg md:block">
+                             Track Company Wide Progress
+                        </h3>
+                        <p class="text-darkGrayishBlue">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate pariatur sit aliquam dolorum voluptates saepe molestiae a hic. Eaque dolor atque repellendus autem aspernatur laudantium in aliquid modi voluptate ipsam.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Testimonials -->
+    <br>
+    <section id="testimonial">
+        <!-- Container to Heading and test blocl -->
+        <div class="container flex flex-col items-center px-5 mx-auto mt-10 text-center">
+            <!-- Heading -->
+            <h2 class="text-4xl font-bold text-center">
+                What's Different About Manage
+            </h2>
+
+            <!-- Testimonial -->
+            <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+
+                <!-- Testimonial 1 -->
+                    <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-100  md:w-1/3">
+                        <img src="img/avatar-anisha.png" class="w-20 -mt-14" alt="">
+                        <h5 class="text-lg font-bold"> Anisha Lee</h5>
+                        <p class="text-sm text-darkGrayishBlue"> 
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit deleniti voluptate quis quidem ex aut eaque explicabo dolorem voluptas eveniet assumenda, et vitae, dolor modi exercitationem dolore voluptates eligendi nobis!
+                        </p>
+                    </div>
+                 <!-- Testimonial 2 -->
+                 <div class="hidden flex-col text-black items-center p-6 space-y-6 rounded-lg bg-gray-100 md:flex md:w-1/3">
+                    <img src="img/avatar-ali.png" class="w-20 -mt-14" alt="">
+                    <h5 class="text-lg font-bold"> Ali Bravo</h5>
+                    <p class="text-sm text-darkGrayishBlue"> 
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit deleniti voluptate quis quidem ex aut eaque explicabo dolorem voluptas eveniet assumenda, et vitae, dolor modi exercitationem dolore voluptates eligendi nobis!
+                    </p>
+                </div>
+
+                 <!-- Testimonial 3 -->
+                 <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-gray-100 md:flex md:w-1/3">
+                    <img src="img/avatar-richard.png" class="w-20 -mt-14" alt="">
+                    <h5 class="text-lg font-bold">Richard Watch</h5>
+                    <p class="text-sm text-darkGrayishBlue"> 
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit deleniti voluptate quis quidem ex aut eaque explicabo dolorem voluptas eveniet assumenda, et vitae, dolor modi exercitationem dolore voluptates eligendi nobis!
+                    </p>
+                </div>
+            </div>
+
+            <div class="my-16">
+                <a href="#" class="p-2 px-6 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">
+                    Get Started
+                </a> 
             </div>
         </div>
     </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="bg-brightRed">
+            <!-- Flex Container -->
+            <div class="container flex flex-col items-center justify-between px-6 py-12 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
+                <!-- Heading -->
+                <h2 class="text-5xl font-bold leading-tight text-center text-white md:text-left md:text-4xl md:max-w-xl">
+                    Simplify How your team works
+                </h2>
+
+                <div class="my-10">
+                    <a href="#" class="p-2 px-6 text-brightRed bg-white shadow-2xl rounded-full baseline hover:bg-gray-900">
+                        Get Started
+                    </a> 
+                </div>
+            </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-veryDarkBlue">
+        <!-- Footer Container -->
+        <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+            <!-- Logo and Social Links -->
+            <div class="flex flex-col-reverse items-center justify-between space-y-20 md:flex-col md:space-y-0 md:items-start">
+                <!-- Logo -->
+                <div >
+                    <img src="img/logo-white.svg" class="h-8" alt="">
+                </div>
+
+                <div class="mx-auto my-5 py-7 text-center text-white md:hidden">
+                    Copyright &copy; 2022, All Right Reserve
+                </div>
+
+                <!-- Social Links -->
+                <div class="flex justify-center space-x-4 ">
+                    <!-- links -->
+                    <a href=""><img src="img/icon-facebook.svg" class="h-8" alt=""></a>
+                    <a href=""><img src="img/icon-instagram.svg" class="h-8" alt=""></a>
+                    <a href=""><img src="img/icon-pinterest.svg" class="h-8" alt=""></a>
+                    <a href=""><img src="img/icon-youtube.svg" class="h-8" alt=""></a>
+                    <a href=""><img src="img/icon-twitter.svg" class="h-8" alt=""></a>
+                </div>
+            </div>
+
+            <!-- Links Container -->
+            <div class="flex justify-around space-x-32">
+                <div class="flex flex-col space-y-2 text-white">
+                    <a href="" class="hover:text-brightRed">Home</a>
+                    <a href="" class="hover:text-brightRed">Pricing</a>
+                    <a href="" class="hover:text-brightRed">product</a>
+                    <a href="" class="hover:text-brightRed">About Us</a>
+                </div>
+
+                <div class="flex flex-col space-y-2 text-white">
+                    <a href="" class="hover:text-brightRed">Career</a>
+                    <a href="" class="hover:text-brightRed">Community</a>
+                    <a href="" class="hover:text-brightRed">Privacy Policy</a>
+                </div>
+
+            </div>
+
+            <!-- Input Container -->
+            <div class="flex flex-col justify-between">
+                <form action="">
+                    <div class="flex spac-x-4">
+                        <input type="text" class="flex-1 rounded-full px-4 py-3 focus:outline-none" placeholder="Update in your inbox">
+                        <button class="bg-brightRed rounded-full text-white py-2 px-6 mx-2 hover:bg-brightRedLight">Go</button>
+                    </div>
+                </form>
+
+                <div class="hidden text-white md:block">
+                    Copyright &copy; 2022, All Right Reverve
+                </div>
+
+            </div>
+
+
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>
